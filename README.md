@@ -1,4 +1,4 @@
-# Beardo Clone
+# Shopbop Clone
 
 ### Project Description
 
