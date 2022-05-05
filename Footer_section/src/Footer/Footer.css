@@ -1,0 +1,41 @@
+ul{
+  list-style: none;
+}
+ul h4{
+  margin-left: -50px;
+}
+footer{
+  margin: 0 auto 0;
+  text-align: left;
+  display: table;
+  font-size: 12px;
+  width: 1024px;
+}
+li{
+  margin-left: -50px;
+  cursor: pointer;
+  /* border:2px solid green; */
+}
+ul a{
+  text-decoration: none;
+    color: black;
+}
+a{
+  color: black;
+}
+body{
+  font-family: "GT-America-Standard","Helvetica Neue",Helvetica,sans-serif;
+  color: black;
+}
+li:hover{
+  font-weight :500;
+}
+.item{
+  width:210px;
+  /* border:1px solid red; */
+}
+.copyright{
+  margin-top:5%;
+  /* border:1px solid red; */
+  text-align: center;
+}
