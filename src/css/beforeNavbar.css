@@ -1,0 +1,46 @@
+.d_head {
+    width: 100%;
+    height: 40px;
+    font-weight: 400;
+    background-color: #faf9f9;
+}
+
+.d_head_2 {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.d_select{
+    display: flex;
+    width:25%;
+    justify-content: center !important;
+}
+
+.d_select div {
+    width: 27%;
+    margin: auto;
+}
+
+.d_select select {
+    width:100%;
+    
+}
+
+.d_promo p {
+    font-size:12px;
+    vertical-align: baseline;
+}
+
+.d_account{
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+    margin-right: 3px;
+}
+
+/* select{
+    width:33%;
+} */
