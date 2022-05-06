@@ -21,18 +21,22 @@ export const Navbar = () => {
                     <CustomSearch onClick={() => setdDown(true)} />
                 </Stack>
                 <SearchNav show={dDown}>
-                    <div>
-                        <Stack>
-                            <Button>Women</Button>
-                            <Button>Men</Button>
-                        </Stack>
-                        <CloseWrapper>
-                            <CustomClose onClick={() => setdDown(false)} />
-                        </CloseWrapper>
+                    <div className="d_head">
+                        <div  className="d_head_3">
+                            <Stack direction='row'>
+                                <Button>Women</Button>
+                                <Button>Men</Button>
+                            </Stack>
+                        </div>
+                        <div>
+                            <CloseWrapper>
+                                <CustomClose onClick={() => setdDown(false)} />
+                            </CloseWrapper>
+                        </div>
                     </div>
-                    <div>
-                        <div><CustomSearch /></div>
-                        <div><input placeholder="What are you lokking for?" /></div>
+                    <div className='d_main'>
+                        <div className='d_searchBut'><CustomSearch /></div>
+                        <div><input placeholder="What are you looking for?" /></div>
                     </div>
                 </SearchNav>
             </div>
@@ -72,6 +76,7 @@ const CustomClose = styled(CloseIcon)`
 `;
 
 const CustomSearch = styled(SearchIcon)`
+    margin-top: 7px;
   cursor: pointer;
 `;
 

@@ -1,4 +1,4 @@
-.d_head {
+.d_head1 {
     width: 100%;
     height: 40px;
     font-weight: 400;
@@ -31,8 +31,8 @@
     
 }
 
-select :hover {
-    
+select {
+    border: none;
 }
 
 .d_promo p {
@@ -45,6 +45,7 @@ select :hover {
     width: 22%;
     justify-content: space-between;
     margin-right: 3px;
+    margin-top: 9px;
 }
 
 /* select{

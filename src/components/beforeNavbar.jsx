@@ -252,7 +252,7 @@ export const BeforeNavbar = () =>{
     const currency =["POPULAR CURRENCIES", "US Dollar ($USD)", "Chinese Yuan Renminbi (¥CNY)", "Euro (€EUR)", " Canadian Dollar ($CAD)", "Pound Sterling (£GBP)", "Japanese Yen (¥JPY)", "South Korean Won (₩KRW)", "Russian Ruble (RUB)", "Emirati Dirham (AED)", "MORE OPTIONS", "Australian Dollar ($AUD)", "Brazilian Real ($BRL)", "Danish Krone (DKK)","Hong Kong Dollar ($HKD)", "Indian Rupee (₹INR)", "Israeli Shekel (₪ILS)", "Kuwaiti Dinar (KWD)","Mexican Peso ($MXN)", "Polish Zloty (PLN)", "", "Saudi Arabian Riyal (SAR)", "Singapore Dollar (SGD)","South African Rand (ZAR)", "Swedish Krona (SEK)", "Swiss Franc (CHF)", "Taiwanese New Dollar ($TWD)", "Turkish Lira (TRY)"];
     const auth = ["Account", "Order", "My Loyalty", "My Reviews", "My Hearts", "My Wish List", "My Designers"]
     return (
-        <div className="d_head">
+        <div className="d_head1">
             <div className="d_head_2">
                 <div className='d_select'>
                     <div>
@@ -279,18 +279,6 @@ export const BeforeNavbar = () =>{
                 </div>
                 <div className='d_account'>
                     <div>
-                        {/* <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-                            <InputLabel id="demo-simple-select-standard-label">Sign In / Register</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-standard-label"
-                            id="demo-simple-select-standard"
-                            // value={age}
-                            // onChange={handleChange}
-                            label="Age"
-                            >
-                            {auth.map(a => <MenuItem value={a}>{a}</MenuItem>)}
-                            </Select>
-                        </FormControl> */}
                         <select>
                             <option value="Sign In / Register">Sign In / Register</option>
                             {auth.map( a => <option key={a} value={a}>{a}</option>)}
