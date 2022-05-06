@@ -5,7 +5,7 @@ const connect = require("./configs/db.js");
 app.listen(5001, async () => {
   try {
     await connect();
-    console.log("listening on port 5100");
+    console.log("listening on port 5001");
   } catch (err) {
     console.log(err);
   }
