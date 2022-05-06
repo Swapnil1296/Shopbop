@@ -1,7 +1,5 @@
 import '../css/beforeNavbar.css';
-// import InputLabel from '@mui/material/InputLabel';
-// import MenuItem from '@mui/material/MenuItem';
-// import FormControl from '@mui/material/FormControl';
+
 
 export const BeforeNavbar = () =>{
     const countries = [ 
@@ -260,19 +258,19 @@ export const BeforeNavbar = () =>{
                     <div>
                         <select>
                             <option value="IN">IN</option>
-                            {countries.map(c => <option value={c.code}>{c.name} ({c.code})</option>)}
+                            {countries.map(c => <option key={c.code} value={c.code}>{c.name} ({c.code})</option>)}
                         </select>
                     </div>
                     <div>
                        <select>
                            <option value="EN">EN</option>
-                           {lang.map(l => <option value={l}>{l}</option>)}
+                           {lang.map(l => <option key={l} value={l}>{l}</option>)}
                        </select>
                     </div>
                     <div>
                         <select>
                             <option value="$USD">$USD</option>
-                            {currency.map(cur => <option value={cur}>{cur}</option>)}
+                            {currency.map(cur => <option key={cur} value={cur}>{cur}</option>)}
                         </select>
                     </div>
                 </div>
@@ -295,7 +293,7 @@ export const BeforeNavbar = () =>{
                         </FormControl> */}
                         <select>
                             <option value="Sign In / Register">Sign In / Register</option>
-                            {auth.map( a => <option value={a}>{a}</option>)}
+                            {auth.map( a => <option key={a} value={a}>{a}</option>)}
                         </select>
                     </div>
                     <div>
@@ -303,7 +301,6 @@ export const BeforeNavbar = () =>{
                     </div>
                     <div>
                         <img width="16px" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/_global/images/topnav/bag_1-0.png" alt="cart" />
-                        
                     </div>
                     <div>0</div>
                 </div>

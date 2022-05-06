@@ -17,15 +17,21 @@
     display: flex;
     width:25%;
     justify-content: center !important;
+    
 }
 
 .d_select div {
     width: 27%;
     margin: auto;
+    z-index: 1;
 }
 
 .d_select select {
     width:100%;
+    
+}
+
+select :hover {
     
 }
 

@@ -1,7 +1,8 @@
 .d_heading {
     display: flex;
-    border: 1px solid black;
     align-items: center;
+    justify-content: center;
+    height: 88px;
 }
 
 .d_title {
@@ -18,9 +19,28 @@
     margin: auto;
     justify-content: center;
     align-items: center;
+    
 }
 
 .d_item_map {
     
     margin: 1%;
 }
+
+.serachDD {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    width: 300px;
+    z-index: 16;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    transition: transform 0.2s ease-in;
+}
+
