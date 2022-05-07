@@ -53,13 +53,39 @@ export const WhatsNew = () => {
           />
           {/* filter div */}
           <div className="filter-div">
-                      <div className="filter-div-one">
-                          
+            <div className="filter-div-one">
+              <p className="filter-div-ptag-one">FILTERS</p>
+              <select name="" id="" className="filter-options">
+                <option value="">DESIGNERS</option>
+              </select>
+              <select name="" id="" className="filter-options">
+                <option value="">SIZES</option>
+              </select>
+              <select name="" id="" className="filter-options">
+                <option value="">COLORS</option>
+              </select>
+              <p className="filter-div-ptag-two">CLEAR ALL</p>
             </div>
-            <div className="filter-div-two"></div>
+            <div className="filter-div-two">
+              <p>SORT BY</p>
+              <select name="" id="" className="filter-div-two-slecttage">
+                <option value="">newest</option>
+                <option value="">price:low to high</option>
+                <option value="">price: high to low</option>
+                <option value="">my wishcart</option>
+                <option value="">editor's picks</option>
+                <option value="">designers exclusives</option>
+                <option valu e="">
+                  rating: high to low
+                </option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
+      {products.map((e) => (
+        <div>{e.id}</div>
+      ))}
     </div>
   );
 };
