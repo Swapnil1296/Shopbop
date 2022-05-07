@@ -1,85 +1,81 @@
-# Shopbop Clone
+# Commerce.js React Checkout
 
-### Project Description
+This `README` will guide you in getting up and running with this project, a complete React application with checkout order capture functionality using Commerce.js.
 
-_To start with the Project run the following command in terminal in "backend" folder_
+[See live demo](https://commercejs-react-checkout.netlify.app/)
 
-> > ⌘ **npm start**
+[See guide](https://commercejs.com/docs/guides/checkout-react)
 
-> After that run index.html in live server and you are ready to run and explore our project.
+**Note**
+- This app is built using [Commerce.js](https://commercejs.com/) v2 SDK
 
----
+## Requirements
 
-### Team Members
-<!-- 
-- **[S](https://github.com/15VIKRANT)**
-- **[Jagamohan Panda](https://github.com/Jagamohan-81)**
-- **[Ritu Bankey](https://github.com/Ritu1011)**
-- **[Vishal Vivare](https://github.com/vishalvivare)**
-- **[Neelam Singh](https://github.com/Neelam2026)** -->
+What you will need to start this project:
 
----
+- An IDE or code editor
+- NodeJS, at least v8
+- npm or yarn
+- Chec CLI `yarn global add @chec/cli`
+- React devtools (recommended)
 
----
+## Setup
 
-## Tech Stack Used : -
+### Create a Chec account (optional). 
 
-- #### Languages
-  - `HTML`
-  - `CSS`
-  - `JavaScript ES6`
-- #### Framework
-  - `Node.Js`
-  - `React`
-- #### Libraries
-  - `Express`
-  - `mongoose`
-- #### Database
-  - `MongoDB`
-- ### UI
-  - `Material UI`
+This section is optional and if only you prefer to set up the store with your own product data. Now that you’ve installed Chec CLI globally, you will be able to access the list of `chec [COMMANDS]`, one of which is registering for a Chec account. Let’s go ahead and get that set up!
 
----
+```bash
+# Open the Chec registration page in your browser
+chec register
+```
 
-### _Following are the Screenshots for the reference_
+Follow the rest of the walk-through to set up your merchant details. Alternatively, you can go [here](https://authorize.chec.io/signup) to register for a Chec account. 
 
-- **Landing Page**
-<!--   ![Landing Page](https://miro.medium.com/max/1400/1*Zuwc_r5ReiIC3-obVc3RWw.jpeg) -->
+**STEP 1.** Clone the repo and install dependencies
 
-- **Product Page**
+```bash
+# Clone the repository locally, optionally rename the repo, change into the directory
+git clone https://github.com/chec/commercejs-react-functional.git chec-store 
+# Change into the directory and install dependencies
+cd chec-store && yarn
+```
 
-<!--   ![Landing Page](https://miro.medium.com/max/1400/1*S3T0tSTZCrZlOhspFJZSWw.jpeg) -->
+**STEP 2.** Set up your environment variables
 
+Replace the sample `.env.example` dotenv file at the root of the project to store your Chec `public_key`.
 
-- **Sign-Up & Sign-In Page**
+```bash
+# Copy from source file to destination file .env
+cp .env.example .env
+```
 
-<!--   ![Landing Page](https://miro.medium.com/max/1400/1*6x8JMbVZWqQyU9vub9Reyg.jpeg) -->
+You can access your API key under in your Chec dashboard setup, then navigate to the Develop tab to copy your Public Key. Alternatively, you can use the demo public key provided in the `.env.example` template.
 
+```js
+// .env
 
-- **Cart Page**
+# Fill in your public key
+REACT_APP_CHEC_PUBLIC_KEY=
+CHEC_API_URL=https://api.chec.io
+NODE_ENV=
+```
 
-<!--   ![Landing Page](https://miro.medium.com/max/875/0*qy8KRtpzkNYaFZ1N.png) -->
+This file is meant to not be committed to source control and also will be hidden in file browsers.
 
-- **Payment Page**
+**STEP 3.** Run development environment
+```bash
+# Run your development environment on http://localhost:3000
+yarn start
+```
 
-<!--   ![Landing Page](https://miro.medium.com/max/875/0*ZP_AX1On72rY4QQN.png) -->
+Now head on over to http://localhost:3000 after starting your development, your site should now be populated with the sample data!
 
----
+**STEP 4.** Make any necessary changes you need and push the code to a repository on Github or your choice of platform.
 
-### About Project
+## 🥞 Stack
 
-> We did this project within 4 days in our unit-5 construct week. We worked on backend parts with includes various types of libraries into it and we have also added database for our project so user and product details will be saved and can be used accordingly. We have also add some cool functionality in our home page, product page and cart page where you can filter the products according to your choice and user can Signup and Login to buy the products.
-
----
-
-### Medium Link
-
-
-
-### Google Drive Link
-
-
-
-
-### Vercel Link
+- Framework - [React.js](https://reactjs.org)
+- eCommerce - [Chec/Commerce.js](https://commercejs.com)
+- Styling - [SASS](https://sass-lang.com)
 
