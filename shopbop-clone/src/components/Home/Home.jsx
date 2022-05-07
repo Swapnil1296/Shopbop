@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Footer from '../Footer/Footer'
+import { Navbar } from '../Navbar/Navbar'
+import ProductSlider from '../ProductSlider/ProductSlider'
 const Home = () => {
   return (
     <HomeWrapper>
+      <Navbar/>
     <Wrapperbanner>
       <Textwrapper>
         <h3> Sun-ready Bags</h3>
@@ -13,10 +16,17 @@ const Home = () => {
      
     </Wrapperbanner>
     <SliderWrapper>
-
+      <Title>
+      <h3>SEE THE LATEST</h3>
+      <h2>WHAT'S NEW</h2>
+      </Title>
+      <Productlink>
+        <a href="#">Show All</a>
+      </Productlink>
+      <ProductSlider/>
     </SliderWrapper>
     <ChoiceWrapper>
-
+       
     </ChoiceWrapper>
     <Footer/>
     </HomeWrapper>
@@ -63,6 +73,13 @@ const SliderWrapper=styled.div`
   
 `
 const ChoiceWrapper=styled.div`
+  
+`
+
+const Title=styled.div`
+  
+`
+const Productlink=styled.div`
   
 `
 export default Home
