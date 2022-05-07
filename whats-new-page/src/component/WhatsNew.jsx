@@ -67,7 +67,7 @@ export const WhatsNew = () => {
               <p className="filter-div-ptag-two">CLEAR ALL</p>
             </div>
             <div className="filter-div-two">
-              <p>SORT BY</p>
+              <p className="filter-p">SORT BY</p>
               <select name="" id="" className="filter-div-two-slecttage">
                 <option value="">newest</option>
                 <option value="">price:low to high</option>
@@ -80,12 +80,20 @@ export const WhatsNew = () => {
                 </option>
               </select>
             </div>
+            {/* <div> pagination need to added</div> */}
+          </div>
+          <div className="sub-content-div-one">
+            {products.map((e) => (
+              <div key={e.id} className="for-bc-color">
+                <img src={e.image_2} className="content-image-one"></img>
+                <p className="content-div-ptag-one">{e.title}</p>
+                <p className="content-div-ptag-two">{e.company}</p>
+                <p className="content-div-ptag-three">{e.price}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      {products.map((e) => (
-        <div>{e.id}</div>
-      ))}
     </div>
   );
 };
