@@ -270,7 +270,7 @@ export const BeforeNavbar = () =>{
                     <div>
                         <select>
                             <option value="$USD">$USD</option>
-                            {currency.map(cur => <option key={cur} value={cur}>{cur}</option>)}
+                            {currency.map(cur => <option className='d_currency' key={cur} value={cur}>{cur}</option>)}
                         </select>
                     </div>
                 </div>

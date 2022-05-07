@@ -11,7 +11,7 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    
+    color: black;
 }
 
 .d_head {
@@ -74,4 +74,18 @@
 
 .d_main_search {
     margin-top:101px;
+}
+
+.d_nav_item button {
+    color: black;
+}
+
+.d_drop_but:hover {
+    font-weight: 900;
+    border-bottom: 1px solid orangered;
+}
+
+.d_sex_but:hover {
+    font-weight: 700;
+    
 }

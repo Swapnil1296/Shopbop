@@ -5,42 +5,91 @@ import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import styled from "styled-components";
 import React, { useState } from 'react';
+import { WhatsNewDropdown } from './Dropdown/WhatsNewDropdown.jsx';
+import { Link } from 'react-router-dom';
+import { OurFavorites } from './Dropdown/OurFavorites';
+import { Designer } from './Dropdown/Designer';
+import { Clothing } from './Dropdown/Clothing';
 
 
 export const Navbar = () => {
     const [dDown, setdDown] = useState(false);
+    const [dMenu, setDmenu] = useState(false);
     const items = ["WHAT'S NEW", "OUR FAVORITES", "DESIGNERS", "CLOTHING", "ACTIVE", "SHOES", "BAGS", "ACCESSORIES", "MEN", "SALE"];
     return (
-        <div className="d_navbar">
-            <div className='d_heading'>
-                <img className="d_logo" height="45px" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png" alt="shopbop" />
-            </div>
-            <div className='d_nav_item'>
-                <Stack direction='row' className='d_dropdown'>
-                    {items.map(i => <Button href='#'>{i}</Button>)}
+        <>
+            <div className="d_navbar">
+                <div className='d_heading'>
+                    <img className="d_logo" height="45px" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png" alt="shopbop" />
+                </div>
+                <div className='d_nav_item'>
+                    {/* <Stack direction='row' className='d_dropdown'>
+                        {items.map(i => {
+                            if({i} === "WHAT'S NEW"){
+                                return (
+                                    <>
+                                        <Button key={i} className='d_drop_but'>{i}</Button>
+                                        { dMenu && <Dropdown />}
+                                    </>
+                                )
+                            }else {
+                                return (
+                                    <Button key={i} className='d_drop_but'>{i}</Button>
+                                )
+                            }
+                            
+                        })}
+                        
+                            
+                            
+                        <CustomSearch onClick={() => setdDown(true)} />
+                    </Stack> */}
+                    <ul>
+                        {items.map(i => {
+                            if({i} === "WHAT'S NEW"){
+                                return (
+                                    <li key={i} onMouseEnter={()=> setDmenu(true)} onMouseLeave={()=> setDmenu(false)}>
+                                        <Link className='d_drop_but' to={i}>{i}</Link>
+                                        { dMenu && <WhatsNewDropdown/>}
+                                    </li>
+                                );
+                            }
+                            return (
+                                <li key={i}>
+                                    <Link className='d_drop_but' to={i}>{i}</Link>
+                                </li>
+                                
+                            )
+                        })}
+                    </ul>
                     <CustomSearch onClick={() => setdDown(true)} />
-                </Stack>
-                <SearchNav show={dDown}>
-                    <div className="d_head">
-                        <div  className="d_head_3">
-                            <Stack direction='row'>
-                                <Button>Women</Button>
-                                <Button>Men</Button>
-                            </Stack>
+                    <SearchNav show={dDown}>
+                        <div className="d_head">
+                            <div  className="d_head_3">
+                                <Stack direction='row' >
+                                    <Button className='d_sex_but'>Women</Button>
+                                    <Button className='d_sex_but'>Men</Button>
+                                </Stack>
+                            </div>
+                            <div>
+                                <CloseWrapper>
+                                    <CustomClose onClick={() => setdDown(false)} />
+                                </CloseWrapper>
+                            </div>
                         </div>
-                        <div>
-                            <CloseWrapper>
-                                <CustomClose onClick={() => setdDown(false)} />
-                            </CloseWrapper>
+                        <div className='d_main'>
+                            <div className='d_searchBut'><CustomSearch /></div>
+                            <div><input placeholder="What are you looking for?" /></div>
                         </div>
-                    </div>
-                    <div className='d_main'>
-                        <div className='d_searchBut'><CustomSearch /></div>
-                        <div><input placeholder="What are you looking for?" /></div>
-                    </div>
-                </SearchNav>
+                    </SearchNav>
+                </div>
+                <WhatsNewDropdown />
+                <OurFavorites />
+                <Designer />
+                <Clothing />
             </div>
-        </div>
+            
+            </>
     )
 }
 
