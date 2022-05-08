@@ -1,0 +1,20 @@
+.main-product-div{
+    border: 1px solid blue;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.subdiv-product-one{
+    width: 50%;
+    height: 50%;
+    border: 1px solid red;
+    background-color: aliceblue;
+}
+.subdiv-product-two{
+    width: 50%;
+    height: 50%;
+    text-align: left;
+    border: 1px solid black;
+}

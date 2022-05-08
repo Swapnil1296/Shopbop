@@ -3,22 +3,20 @@ import {useState, useEffect} from "react";
 import "../componentCSS/WhatsNew.css";
 import Post from "./Posts";
 import Pagination from "./Pagination";
-const url = "http://localhost:5001/product";
+import {Link} from "react-router-dom";
+
 export const WhatsNew = () => {
   const [posts, setPosts] = useState([]);
-  const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(url)
-      .then((response) => {
-        if (response.ok) return response.json();
-        throw new Error("something went wrong while requesting posts");
-      })
-      .then((posts) => setPosts(posts))
-      .catch((error) => setError(error.message));
+    axios.get(`http://localhost:5001/product`).then(({data}) => {
+     
+
+      setPosts(data);
+    });
   }, []);
 
-  if (error) return <h1>{error}</h1>;
+  
   return (
     <div className="main-div-products">
       <div className="page-title-div">
@@ -91,15 +89,7 @@ export const WhatsNew = () => {
             {/* <div> pagination need to added</div> */}
           </div>
           <div className="sub-content-div-one">
-            
-            {/* {products.map((e) => (
-              <div key={e.id} className="for-bc-color">
-                <img src={e.image_2} className="content-image-one"></img>
-                <p className="content-div-ptag-one">{e.title}</p>
-                <p className="content-div-ptag-two">{e.company}</p>
-                <p className="content-div-ptag-three">{e.price}</p>
-              </div>
-            ))} */}
+          
             {posts.length > 0 ? (
               <>
                 <Pagination

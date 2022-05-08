@@ -4,7 +4,7 @@ import "../componentCSS/OurFavorite.css";
 import Post from "./OurFavPosts";
 import Pagination from "./OurFavPagination";
 const url = "http://localhost:5001/product";
-export const WhatsNew = () => {
+export const OurFavorite = () => {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState("");
 
@@ -94,14 +94,7 @@ export const WhatsNew = () => {
             {/* <div> pagination need to added</div> */}
           </div>
           <div className="sub-content-div-one">
-            {/* {products.map((e) => (
-              <div key={e.id} className="for-bc-color">
-                <img src={e.image_2} className="content-image-one"></img>
-                <p className="content-div-ptag-one">{e.title}</p>
-                <p className="content-div-ptag-two">{e.company}</p>
-                <p className="content-div-ptag-three">{e.price}</p>
-              </div>
-            ))} */}
+          
             {posts.length > 0 ? (
               <>
                 <Pagination

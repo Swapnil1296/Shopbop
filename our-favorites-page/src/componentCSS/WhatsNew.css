@@ -116,6 +116,12 @@ font-size: 11px;
     /* line-height: 20px; */
     font-family: Arial, Helvetica, sans-serif;
 }
+.sub-content-div-one{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    background-color: azure;
+}
 
 
 
