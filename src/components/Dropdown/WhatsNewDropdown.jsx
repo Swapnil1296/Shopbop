@@ -21,7 +21,7 @@ export const WhatsNewDropdown = () => {
                             {row1.map(r => {
                                 return (
                                     <li>
-                                        <Link className="d_services-sub-link" to={r} onClick={() => setDd(false)}>{r}</Link>
+                                        <Link to={r} className="d_services-sub-link" onClick={() => setDd(false)}>{r}</Link>
                                     </li>)}
                                 )
                             }
@@ -52,16 +52,18 @@ export const WhatsNewDropdown = () => {
                         </ul>
                     </div>
                 </div>
-                
-                <div className="d_dd_img">
-                    <a href="#" onClick={() => setDd(!dd)}>
-                        <img width="386px" src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_whatsnew_slot1_dresses.jpg" alt="What's New" />
-                        <b>The Dress Shop</b>
-                        <Stack>
-                            <Button>Shop Now</Button>
-                        </Stack>
-                    </a>
+                <div className="d_dd_img_m">
+                    <div className="d_dd_img">
+                        <a href="#" onClick={() => setDd(!dd)}>
+                            <img width="386px" src="https://m.media-amazon.com/images/G/01/Shopbop/media/desktop/topnav/2022/2022_04/sb_20220425_desktop_whatsnew_slot1_dresses.jpg" alt="What's New" />
+                            <b>The Dress Shop</b>
+                            <Stack>
+                                <Button>Shop Now</Button>
+                            </Stack>
+                        </a>
+                    </div>
                 </div>
+                
             </div>
         </div>
         

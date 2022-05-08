@@ -10,6 +10,12 @@ import { Link } from 'react-router-dom';
 import { OurFavorites } from './Dropdown/OurFavorites';
 import { Designer } from './Dropdown/Designer';
 import { Clothing } from './Dropdown/Clothing';
+import { Active } from './Dropdown/Active';
+import { Shoes } from './Dropdown/Shoes';
+import { Bags } from './Dropdown/Bags';
+import { Accessories } from './Dropdown/Accessories';
+import { Men } from './Dropdown/Men';
+import { Sale } from './Dropdown/Sale';
 
 
 export const Navbar = () => {
@@ -23,43 +29,24 @@ export const Navbar = () => {
                     <img className="d_logo" height="45px" src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png" alt="shopbop" />
                 </div>
                 <div className='d_nav_item'>
-                    {/* <Stack direction='row' className='d_dropdown'>
+                    <ul className='d_nav_item_list'>
                         {items.map(i => {
-                            if({i} === "WHAT'S NEW"){
-                                return (
-                                    <>
-                                        <Button key={i} className='d_drop_but'>{i}</Button>
-                                        { dMenu && <Dropdown />}
-                                    </>
-                                )
-                            }else {
-                                return (
-                                    <Button key={i} className='d_drop_but'>{i}</Button>
-                                )
-                            }
-                            
-                        })}
-                        
-                            
-                            
-                        <CustomSearch onClick={() => setdDown(true)} />
-                    </Stack> */}
-                    <ul>
-                        {items.map(i => {
-                            if({i} === "WHAT'S NEW"){
-                                return (
-                                    <li key={i} onMouseEnter={()=> setDmenu(true)} onMouseLeave={()=> setDmenu(false)}>
-                                        <Link className='d_drop_but' to={i}>{i}</Link>
-                                        { dMenu && <WhatsNewDropdown/>}
-                                    </li>
-                                );
-                            }
+                            // if({i} === "WHAT'S NEW"){
+                            //     return (
+                            //         <>
+                            //             <li key={i} onMouseEnter={() => setDmenu(true)} onMouseLeave={() => setDmenu(false)}>
+                            //                 <Link className='d_drop_but' to={i} >{i}</Link>
+                            //                 { dMenu && <WhatsNewDropdown />}
+                            //             </li>
+                                        
+                            //         </>
+                            //     )
+                            // }
                             return (
                                 <li key={i}>
                                     <Link className='d_drop_but' to={i}>{i}</Link>
                                 </li>
-                                
-                            )
+                            );
                         })}
                     </ul>
                     <CustomSearch onClick={() => setdDown(true)} />
@@ -83,10 +70,16 @@ export const Navbar = () => {
                         </div>
                     </SearchNav>
                 </div>
-                <WhatsNewDropdown />
-                <OurFavorites />
-                <Designer />
+                {/* <Accessories />
+                <Active />
+                <Bags />
                 <Clothing />
+                <Men />
+                <Sale />
+                <WhatsNewDropdown />
+                <Designer />
+                <Shoes />
+                <OurFavorites /> */}
             </div>
             
             </>

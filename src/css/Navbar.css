@@ -12,6 +12,8 @@
     justify-content: center;
     align-items: center;
     color: black;
+    margin-top: -2%;
+    /* border: 1px solid black; */
 }
 
 .d_head {
@@ -72,12 +74,29 @@
     padding: 20px 3.73% 0px;
 }
 
-.d_main_search {
+/* .d_main_search {
     margin-top:101px;
+} */
+
+.d_nav_item li {
+    list-style: none;
+    margin: auto;
+    padding: 1%;
+    
 }
 
-.d_nav_item button {
+.d_nav_item ul {
+    display:flex;
+    width:90%;
+}
+
+
+.d_drop_but {
     color: black;
+    list-style: none;
+    text-decoration: none;
+    margin:auto;
+    text-align:left;
 }
 
 .d_drop_but:hover {
@@ -89,3 +108,11 @@
     font-weight: 700;
     
 }
+
+.d_nav_list {
+    display: flex;
+}
+
+/* .d_nav_item_list {
+    justify-content:space-between;
+} */

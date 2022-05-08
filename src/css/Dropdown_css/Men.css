@@ -1,4 +1,5 @@
 
+
 .d_dd_main {
     width: 100%;
     background: white;
@@ -56,5 +57,5 @@
 
 
 .d_dd_img button {
-    width: fit-content;
+    width:30%;
 }
