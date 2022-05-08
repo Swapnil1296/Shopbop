@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { WhatsNew } from './component/WhatsNew'
+import { WhatsNew } from './component/OurFavorite'
 
 function App() {
  

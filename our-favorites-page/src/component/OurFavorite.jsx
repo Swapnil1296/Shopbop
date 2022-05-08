@@ -1,8 +1,8 @@
 
 import {useState, useEffect} from "react";
-import "../componentCSS/WhatsNew.css";
-import Post from "./Posts";
-import Pagination from "./Pagination";
+import "../componentCSS/OurFavorite.css";
+import Post from "./OurFavPosts";
+import Pagination from "./OurFavPagination";
 const url = "http://localhost:5001/product";
 export const WhatsNew = () => {
   const [posts, setPosts] = useState([]);

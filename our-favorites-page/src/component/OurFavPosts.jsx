@@ -1,4 +1,4 @@
-import '../componentCSS/posts.css'
+import '../componentCSS/OurFavposts.css'
 export default function Post(props) {
   const {id, image_3, title,company,price} = props.data;
   return (

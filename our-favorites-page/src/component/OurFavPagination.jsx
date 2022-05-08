@@ -1,4 +1,4 @@
-import "../componentCSS/pagination.css";
+import "../componentCSS/OurFavpagination.css";
 import { useState } from "react";
  
 export default function Pagination({
