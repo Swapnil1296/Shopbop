@@ -58,6 +58,7 @@ const Card=styled.div`
     margin: 0px;
     text-transform: none;
     color: rgb(238, 74, 27);
+    margin-bottom:20%;
    }
 `
 const CardWrapper=styled.div`

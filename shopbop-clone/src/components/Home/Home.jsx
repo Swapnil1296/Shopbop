@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import Footer from '../Footer/Footer'
 import ProductSlider from '../ProductSlider/ProductSlider'
 import Choice from '../Choice/Choice'
+import EditorsPick from '../EditorsPick/EditorsPick'
+import TwoUp from '../TwoUp/TwoUp'
 const Home = () => {
  
   return (
@@ -32,6 +34,28 @@ const Home = () => {
         <h1>What Are You Looking For?</h1>
         <Choice/>
       </ChoiceWrapper>
+      <EditorsPick/>
+      <TwoUp/>
+      {/* <Wrapperbanner>
+        <Textwrapper>
+          <h3> Sun-ready Bags</h3>
+          <p>Warmer days call for<br/> handspun-chic style &#40;go <br/> ahead,get carried away&#41;</p>
+          <button>Shop now</button>
+        </Textwrapper>
+      </Wrapperbanner> */}
+      <SliderWrapper>
+        <DescWrapper>
+          <Title>
+            <div className="h3" >SPOTLIGHT ON</div>
+            <div className='h2'>Black-Led Brands</div>
+          </Title>
+          <Productlink>
+            Show all
+          </Productlink>
+        </DescWrapper>
+        <ProductSlider/>
+      </SliderWrapper>
+      
     </HomeWrapper>
   )
 }
