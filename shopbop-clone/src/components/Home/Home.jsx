@@ -6,6 +6,7 @@ import ProductSlider from '../ProductSlider/ProductSlider'
 import Choice from '../Choice/Choice'
 import EditorsPick from '../EditorsPick/EditorsPick'
 import TwoUp from '../TwoUp/TwoUp'
+import banner from "../../banner.jpg";
 const Home = () => {
  
   return (
@@ -55,7 +56,20 @@ const Home = () => {
         </DescWrapper>
         <ProductSlider/>
       </SliderWrapper>
-      
+      <img src={banner} alt="banner" 
+      />
+      <SliderWrapper>
+        <DescWrapper>
+          <Title>
+            <div className="h3" >DON'T MISS OUR</div>
+            <div className='h2'>Recent Best Sellers</div>
+          </Title>
+          <Productlink>
+            Show all
+          </Productlink>
+        </DescWrapper>
+        <ProductSlider/>
+      </SliderWrapper>
     </HomeWrapper>
   )
 }
