@@ -1,0 +1,54 @@
+.main-div{
+    border:1px solid red;
+    /* max-width: 1050px; */
+    /* line-height: initial; */
+    display: flex;
+    /* grid-column-gap: 5%; */
+    margin:0 40px;
+    padding: 0px 3.73%;
+    background-color: rgb(241,241,241);
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 5%;
+    padding: 0px 3.73%;
+    margin: 0px auto;
+    
+}
+.main-div h4{margin:0px}
+.flex{display:flex;}
+body{
+    font-family: "GT-America-Standard","Helvetica Neue",Helvetica,sans-serif;
+    /* background-color: rgb(241,241,241); */
+    background-color: white;
+}
+/* .check{
+    /* margin:0 10%; */
+    
+/* }  */
+.cart-details{
+    width:45%;
+    margin:auto;
+    
+    grid-row-gap: 50px;
+    background-color: blue;
+    
+
+}
+.order-summery{
+    width:45%;
+    margin:auto;
+    border:1px solid black;
+}
+.product-data{
+    height:120px;
+    width:100%;
+    background-color: #ffff;
+    border:1px solid blue;
+}
+.my-whishlist{
+    margin:20px 0;
+    height:50px;
+    width:100%;
+    background-color: #fff;
+    border:1px solid black;
+}
