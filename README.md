@@ -3,11 +3,12 @@
 ### Project Description
 
 _To start with the Project run the following command in terminal in "backend" folder_
+> > ⌘ **npm install**
+> > ⌘ **npm run start**
 
-> > ⌘ **npm start**
-
-> After that run index.html in live server and you are ready to run and explore our project.
-
+> After that run shopbop-clone folder using folloowing commands;
+> > ⌘ **npm install**
+> > ⌘ **npm run start**
 ---
 
 ### Team Members
@@ -43,43 +44,33 @@ _To start with the Project run the following command in terminal in "backend" fo
 
 ### _Following are the Screenshots for the reference_
 
-- **Landing Page**
-<!--   ![Landing Page](https://miro.medium.com/max/1400/1*Zuwc_r5ReiIC3-obVc3RWw.jpeg) -->
+- **Home Page**
+  ![Landing Page](https://github.com/Swapnil1296/Shopbop/blob/main/images/Home.PNG)
 
-- **Product Page**
+- **WhatsNew Page**
 
-<!--   ![Landing Page](https://miro.medium.com/max/1400/1*S3T0tSTZCrZlOhspFJZSWw.jpeg) -->
-
-
-- **Sign-Up & Sign-In Page**
-
-<!--   ![Landing Page](https://miro.medium.com/max/1400/1*6x8JMbVZWqQyU9vub9Reyg.jpeg) -->
+  ![Landing Page](https://github.com/Swapnil1296/Shopbop/blob/main/images/Whatsnew.PNG)
 
 
-- **Cart Page**
+- **OurFav Page**
 
-<!--   ![Landing Page](https://miro.medium.com/max/875/0*qy8KRtpzkNYaFZ1N.png) -->
+  ![Landing Page](https://github.com/Swapnil1296/Shopbop/blob/main/images/Ourfav.PNG)
 
-- **Payment Page**
 
-<!--   ![Landing Page](https://miro.medium.com/max/875/0*ZP_AX1On72rY4QQN.png) -->
+- **ProductDetails Page**
+
+  ![Landing Page](https://github.com/Swapnil1296/Shopbop/blob/main/images/prodDetail.PNG)
+
 
 ---
 
 ### About Project
 
-> We did this project within 4 days in our unit-5 construct week. We worked on backend parts with includes various types of libraries into it and we have also added database for our project so user and product details will be saved and can be used accordingly. We have also add some cool functionality in our home page, product page and cart page where you can filter the products according to your choice and user can Signup and Login to buy the products.
+> We did this project within 5 days in our unit-5 construct week. We worked on backend parts with includes various types of libraries into it and we have also added database for our project so user and product details will be saved and can be used accordingly. We have also add some cool functionality in our home page, product page.
 
 ---
 
 ### Medium Link
-
-
-
-### Google Drive Link
-
-
-
 
 ### Vercel Link
 
