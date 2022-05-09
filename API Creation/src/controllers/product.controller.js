@@ -19,5 +19,13 @@ router.post("", async (req, res) => {
     return res.status(500).send({message: err.message});
   }
 });
+router.get("/:id", async (req, res) => {
+  try {
+    const product = await Product.findById(req.params.id).lean().exec();
+    return res.status(200).send(product);
+  } catch (err) {
+    return res.status(500).send(err.message);
+  }
+});
 
 module.exports = router;
