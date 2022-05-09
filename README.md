@@ -13,7 +13,11 @@ _To start with the Project run the following command in terminal in "backend" fo
 
 ### Team Members
 
-
+Satyajit Arun Sahu	fw14_395<br>
+Swapnil Raosaheb Landage	fw14_510 <br>	
+Somashekar S R	fw14_207<br>	
+Jagamohan Panda	fw14_011<br>
+Dhruba Singha	fw14_761	<br>	
 ---
 
 ---
