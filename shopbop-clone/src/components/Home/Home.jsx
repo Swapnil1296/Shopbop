@@ -15,7 +15,9 @@ const Home = () => {
         <Textwrapper>
           <h3> Sun-ready Bags</h3>
           <p>Warmer days call for<br/> handspun-chic style &#40;go <br/> ahead,get carried away&#41;</p>
+          <Link to="/what'snew">
           <button>Shop now</button>
+          </Link>
         </Textwrapper>
       </Wrapperbanner>
       <SliderWrapper>
@@ -110,6 +112,7 @@ margin-top: 80px;
     border: none;
     padding: 18px 40px;
     color: rgb(255, 255, 255) !important;
+    cursor: pointer;
   }
 `
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import './ProductSlider.css'
+import { Link } from 'react-router-dom'
 
 const ProductSlider = () => {
   const ItemCards = [
@@ -47,13 +48,14 @@ const ProductSlider = () => {
       <Slider {...sliderSettings}>
         {ItemCards.map((card, index) => (
           <div key={index}>
+            <Link to="/what'snew">
             <div className="card">
               <img alt={card.title} src={card.imageSrc}  className='card-img' />
               <h2 className="card-title">{card.title}</h2>
               <p className='card-desc'>{card.description}</p>
               <p className='price'>{card.pricingText}</p>
             </div>
-             
+            </Link>
           </div>
         ))}
       </Slider>

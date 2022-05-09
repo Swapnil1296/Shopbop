@@ -68,10 +68,10 @@ export const Productdetail = () => {
           cut in a mini length.
         </div>
         <div className="add-to-cart">
-          <button onClick={()=>{alert("Item added to your Cart")}}>Add To Bag</button>
+          <button>Add To Bag</button>
         </div>
         <div className="add-to-whishlist">
-          <button onClick={()=>{alert("Item added to your Whishlist")}}>Add To Whish List</button>
+          <button>Add To Whish List</button>
         </div>
         <div className="bottom-tagline">
           <p>FREE express international delivery and EASY Returns</p>
