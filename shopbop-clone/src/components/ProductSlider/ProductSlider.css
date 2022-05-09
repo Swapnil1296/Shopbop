@@ -1,0 +1,29 @@
+.card{
+  display:flex;
+  flex-direction: column;
+  height:300px;
+  width:150px;
+  border:1px solid transparent;
+  justify-content: center;
+  align-items: center;
+}
+.card-img{
+  height:80%;
+  width:100%;
+  object-fit: cover;
+}
+.card-title{
+  font-size: 12px;
+  margin: 5px 0px;
+  font-weight: bold;
+
+}
+.card-desc{
+  font-size: 12px;
+  margin: 2px 0px;
+}
+.price{
+  font-size: 12px;
+  margin: 2px 0px;
+  font-weight: bold;
+}

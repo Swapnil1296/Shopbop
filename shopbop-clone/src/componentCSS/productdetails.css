@@ -1,0 +1,118 @@
+.main-product-div{
+    
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.subdiv-product-one{
+    width: 50%;
+    height: 50%;
+   
+    background-color: aliceblue;
+}
+.subdiv-product-two{
+    width: 50%;
+    height: 50%;
+    text-align: left;
+   
+}
+.subdiv-product-ptag-one{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1px;
+}
+.subdiv-product-ptag-two {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px;
+}
+.subdiv-product-ptag-three {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.color-div{
+    margin-top: 40px;
+}
+.color-div>p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.color-div>img{
+    border-radius: 50%;
+    width: 70px;
+}
+.sizes-div{
+  width: 220px;
+  margin-top: 10px;
+    display:grid;
+    gap: 10px;
+    grid-template-columns: repeat(6,1fr);
+}
+.sizes-div>div{
+    width: 40px;
+    height: 33px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid violet;
+}
+.sizes-div>div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.sizes-div>div>p{
+  
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.size-description{
+    margin-top: 20px;
+}
+.size-description>p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.add-to-cart{
+    margin-top: 20px;
+}
+.add-to-cart>button{
+    width: 400px;
+    height: 50px;
+    border: 1px solid ;
+    cursor: pointer;
+    background-color: #ee4a1b;
+    color:white ;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.add-to-whishlist{
+    margin-top: 20px;
+}
+.add-to-whishlist>button{
+    width: 400px;
+        height: 50px;
+        border: 1px solid wheat;
+        cursor: pointer;
+        background-color: whitesmoke;
+        color: black;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+}
+.bottom-tagline{
+    margin-top: 10px;
+}
+.bottom-tagline>p{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: underline;
+}
