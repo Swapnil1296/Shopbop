@@ -12,12 +12,7 @@ _To start with the Project run the following command in terminal in "backend" fo
 ---
 
 ### Team Members
-<!-- 
-- **[S](https://github.com/15VIKRANT)**
-- **[Jagamohan Panda](https://github.com/Jagamohan-81)**
-- **[Ritu Bankey](https://github.com/Ritu1011)**
-- **[Vishal Vivare](https://github.com/vishalvivare)**
-- **[Neelam Singh](https://github.com/Neelam2026)** -->
+
 
 ---
 
@@ -71,6 +66,9 @@ _To start with the Project run the following command in terminal in "backend" fo
 ---
 
 ### Medium Link
-
+https://medium.com/@satyajitsahu444/shop-bop-clone-using-reactjs-531122bf6bce
 ### Vercel Link
 
+https://shopbop-clone.vercel.app/
+
+Note: Backed server is not deployed you need to deploy it.

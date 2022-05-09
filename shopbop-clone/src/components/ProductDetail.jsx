@@ -68,10 +68,10 @@ export const Productdetail = () => {
           cut in a mini length.
         </div>
         <div className="add-to-cart">
-          <button>Add To Bag</button>
+          <button onClick={()=>{alert("Item added to your Cart")}}>Add To Bag</button>
         </div>
         <div className="add-to-whishlist">
-          <button>Add To Whish List</button>
+          <button onClick={()=>{alert("Item added to your Whishlist")}}>Add To Whish List</button>
         </div>
         <div className="bottom-tagline">
           <p>FREE express international delivery and EASY Returns</p>
@@ -82,6 +82,8 @@ export const Productdetail = () => {
       <p>First Name :{users.title} </p>
 
       <p>Last Name :{users.company} </p> */}
+
+
     </div>
   );
 };
