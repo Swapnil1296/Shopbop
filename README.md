@@ -22,7 +22,7 @@ Dhruba Singha	fw14_761	<br>
 
 ---
 
-## Tech Stack Used : -
+## Tech Stack Used :-
 
 - #### Languages
   - `HTML`
